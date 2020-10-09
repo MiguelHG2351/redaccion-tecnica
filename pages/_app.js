@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import Header from '../components/header'
 
 // Next
 import App from "next/app";
@@ -20,6 +21,7 @@ class MyApp extends App {
                         rel="stylesheet"
                     />
                 </Head>
+                    <Header />
                     <Component { ...pageProps } />
             </Layout>
             </>

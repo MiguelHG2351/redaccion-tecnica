@@ -6,4 +6,6 @@
 
 - Miguel
 
+- Erick
+
 - Y los otros :v
