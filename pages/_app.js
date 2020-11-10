@@ -1,20 +1,16 @@
-import Layout from '../components/Layout'
-import Header from '../components/header'
+import Layout from "../components/Layout";
+import Header from "../components/header";
 
-// Next
-
-class MyApp extends App {
-  render () {
-    const { Component, pageProps } = this.props
+function MyApp(props) {
+    const { Component, pageProps } = props;
     return (
-            <>
+        <>
             <Layout>
                 <Header />
-                <Component { ...pageProps } />
+                <Component {...pageProps} />
             </Layout>
-            </>
-    )
-  }
+        </>
+    );
 }
 
-export default MyApp
+export default MyApp;
