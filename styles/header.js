@@ -63,7 +63,7 @@ const style = css`
     .list-menu a {
         display: flex;
         align-items: center;
-        padding: 8px 14px;
+        padding: 16px 14px;
         color: #7b887b;
         text-decoration: none;
         transition: all ease 0.2s;
