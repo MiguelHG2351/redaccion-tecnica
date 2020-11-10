@@ -1,4 +1,4 @@
-import css from "styled-jsx/css";
+import css from 'styled-jsx/css'
 
 const style = css`
     .sidenav {
@@ -7,7 +7,7 @@ const style = css`
         left: 0;
         bottom: 0;
         width: 75%;
-        background-color: #fff;
+        background-color: #212429;
         transition: all ease 0.35s;
         transform: translateX(-3000px);
         z-index: 10;
@@ -17,6 +17,8 @@ const style = css`
         transform: translateX(0);
     }
 
+        /* Profile */
+
     .profile {
         position: relative;
         height: auto;
@@ -24,6 +26,8 @@ const style = css`
         padding: 32px 32px 12px 32px;
         margin-bottom: 5px;
     }
+
+        /* Fondo | Background*/
 
     .background {
         position: absolute;
@@ -59,14 +63,16 @@ const style = css`
     .list-menu a {
         display: flex;
         align-items: center;
-        padding: 12px;
-        color: #000;
+        padding: 8px 14px;
+        color: #7b887b;
         text-decoration: none;
-        transition: background ease 0.3s;
+        transition: all ease 0.2s;
+        outline: none;
+        border-bottom: 1px solid #333333;
     }
 
     .list-menu a:hover {
-        background-color: rgba(0, 0, 0, 0.2);
+
     }
 
     .list-menu i {
@@ -98,9 +104,21 @@ const style = css`
         border: none;
         outline: none;
         cursor: pointer;
+        border: 1px solid #fff;
+        padding: 4px 14px;
+        transition: background ease 0.17s;
+        color: #fff;
+    }
+
+    .btn-menu:hover {
+        color: #000;
+        background-color: #fff;
     }
 
     @media screen and (min-width: 996px) {
+
+        /* SideNav */
+
         .sidenav {
             position: static;
             transform: translate(0);
@@ -115,6 +133,8 @@ const style = css`
             width: 90%;
             margin: 0 auto;
         }
+
+        /* Profile */
 
         .profile {
             padding: 0;
@@ -139,17 +159,26 @@ const style = css`
             font-size: 12px;
         }
 
-        .list-menu a {
-            border-radius: 14px;
-        }
-
         .menu {
             flex: 1;
             display: flex;
             align-items: center;
             gap: 0 16px;
         }
-    }
-`;
 
-export default style;
+        .list-menu a {
+            border: 1px solid #333333;
+            border-radius: 6px;
+
+        }
+        
+        .list-menu a:hover {
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, .7);
+        }
+
+
+    }
+`
+
+export default style

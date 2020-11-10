@@ -7,13 +7,25 @@ const styles = css`
         grid-template-columns: 15% 85%;
     }
 
-    .header-menu {
+    .header-group {
         padding: 12px;
     }
 
     .groups {
         background-color: #212429;
         height: 100vh;
+    }
+
+    .go-back {
+        background-color: #313434;
+        display: block;
+        color: #fff;
+        padding: 15px;
+        box-shadow: 0 0 2px 2px #000;
+        display: flex;
+        align-items: center;
+        gap: 0 15px;
+        text-decoration: none;
     }
 
     .list-group {

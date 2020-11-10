@@ -1,4 +1,4 @@
-import css from "styled-jsx/css";
+import css from 'styled-jsx/css'
 
 export const globalStyles = css.global`
     * {
@@ -10,9 +10,13 @@ export const globalStyles = css.global`
         --shadow:  0px 1px 5px 0px rgba(0,0,0,0.15);
     }
 
+    body {
+        background-color: #1b1e1e;
+    }
+
     .responsive-img {
         max-width: 100%;
         height: auto;
     }
 
-`;
+`

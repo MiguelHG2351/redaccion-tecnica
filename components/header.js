@@ -1,26 +1,26 @@
-import style from "../styles/header";
-import { useState, useRef } from "react";
-import Link from "next/link";
+import style from 'styles/header'
+import { useState, useRef } from 'react'
+import Link from 'next/link'
 
-export default function Header() {
-    const overlayRef = useRef(null);
-    const [menu, setMenu] = useState("sidenav");
+export default function Header () {
+  const overlayRef = useRef(null)
+  const [menu, setMenu] = useState('sidenav')
 
-    function toggleMenu() {
-        if (menu === "sidenav") {
-            setMenu("sidenav active");
-            overlayRef.current.classList.toggle("active");
-        } else {
-            setMenu("sidenav");
-        }
+  function toggleMenu () {
+    if (menu === 'sidenav') {
+      setMenu('sidenav active')
+      overlayRef.current.classList.toggle('active')
+    } else {
+      setMenu('sidenav')
     }
+  }
 
-    function closeMenu() {
-        overlayRef.current.classList.remove("active");
-        setMenu("sidenav");
-    }
+  function closeMenu () {
+    overlayRef.current.classList.remove('active')
+    setMenu('sidenav')
+  }
 
-    return (
+  return (
         <>
             <header className="header-site">
                 <div className="container-header">
@@ -48,8 +48,8 @@ export default function Header() {
                             </div>
                             <ul className="menu">
                                 <li className="list-menu">
-                                    <Link href="/students">
-                                        <a>
+                                    <Link href="/">
+                                        <a onClick={closeMenu}>
                                             <i className="material-icons">home</i>
                                             Home
                                         </a>
@@ -58,7 +58,7 @@ export default function Header() {
                                 <li className="list-menu">
                                     <Link href="/videos">
                                         <a>
-                                            <i className="material-icons">book</i>
+                                            <i className="material-icons">play_circle_filled</i>
                                             Videos
                                         </a>
                                     </Link>
@@ -73,7 +73,7 @@ export default function Header() {
                                 </li>
                                 <li className="list-menu">
                                     <Link href="/group">
-                                        <a>
+                                        <a onClick={closeMenu}>
                                             <i className="material-icons">group</i>
                                             Grupo
                                         </a>
@@ -81,7 +81,7 @@ export default function Header() {
                                 </li>
                                 <li className="list-menu">
                                     <Link href="/pacmanxd">
-                                        <a>
+                                        <a onClick={closeMenu}>
                                             <i className="material-icons">games</i>
                                             Pacman
                                         </a>
@@ -92,7 +92,7 @@ export default function Header() {
                     </div>
                     <div className="header-visible">
                         <button className="btn-menu" onClick={toggleMenu}>
-                            <i className="material-icons">menu</i>
+                            <i className="material-icons">sort</i>
                         </button>
                     </div>
                 </div>
@@ -100,5 +100,5 @@ export default function Header() {
             <div className="overlay" ref={overlayRef} onClick={closeMenu}></div>
             <style jsx>{style}</style>
         </>
-    );
+  )
 }
