@@ -1,11 +1,6 @@
-import css from 'styled-jsx/css'
+import css from "styled-jsx/css";
 
 const styles = css`
-
-    .container {
-        display: grid;
-        grid-template-columns: 15% 85%;
-    }
 
     .header-group {
         padding: 12px;
@@ -46,9 +41,9 @@ const styles = css`
         position: absolute;
         width: 2px;
         background-color: #4a4e50;
-        left: 13%;
-        top: 0;
-        bottom: 0;
+        left: 7.6%;
+        top: 42px;
+        height: 45px;
         z-index: 4;
     }
 
@@ -58,7 +53,7 @@ const styles = css`
 
     .list-group li a {
         position: relative;
-        z-index: 5; 
+        z-index: 5;
         margin-left: 12px;
         color: #fff;
         text-decoration: none;
@@ -68,6 +63,13 @@ const styles = css`
         color: #fff;
     }
 
-`
+    @media screen and (min-width: 992px) {
+        .container {
+            display: grid;
+            grid-template-columns: 15% 85%;
+            grid-template-rows: auto;
+        }
+    }
+`;
 
-export default styles
+export default styles;
