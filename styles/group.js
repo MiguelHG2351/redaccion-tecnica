@@ -9,6 +9,7 @@ const styles = css`
     .groups {
         background-color: #212429;
         height: 100vh;
+        position: relative;
     }
 
     .go-back {
@@ -23,6 +24,20 @@ const styles = css`
         text-decoration: none;
     }
 
+    .background {
+        position: absolute;
+        z-index: 0;
+        top: 100px;
+        left: 100px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .background img {
+        width: 100%;
+        height: auto;
+    }
+
     .list-group {
         padding-left: 0;
         position: relative;
@@ -34,7 +49,8 @@ const styles = css`
         cursor: pointer;
         display: flex;
         align-items: center;
-        background-color: #313434;
+        background-color: rgb(49, 52, 52, 0.81);
+        /* background-color: #313434; */
     }
 
     .line {
