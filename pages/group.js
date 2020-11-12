@@ -19,6 +19,9 @@ export default function Group() {
                     <MediaPlayer />
                 </section>
                 <section className="groups">
+                    <div className="background">
+                        <img src="/images/xd.png" alt="Imagen de fondo v:"/>
+                    </div>
                     <Link href="/">
                         <a className="go-back">
                             <i className="material-icons">arrow_back</i>
