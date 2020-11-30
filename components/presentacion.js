@@ -7,7 +7,7 @@ export default function Presentacion() {
             
             <ul className="list-students">
                 <li>Enrique</li>
-                <li>Andres</li>
+                <li>Andre</li>
                 <li>Erick</li>
             </ul>
             <style jsx>
