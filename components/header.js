@@ -83,7 +83,7 @@ export default function Header () {
                                     <Link href="/pacmanxd">
                                         <a onClick={closeMenu}>
                                             <i className="material-icons">games</i>
-                                            Pacman
+                                            Documentos
                                         </a>
                                     </Link>
                                 </li>
