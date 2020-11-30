@@ -5,7 +5,7 @@ export default function Presentacion() {
         <section className="presentacion">
             <h2>Proyecto Final de Redacción</h2>
             
-            <ul>
+            <ul className="list-students">
                 <li>Enrique</li>
                 <li>Andres</li>
                 <li>Erick</li>

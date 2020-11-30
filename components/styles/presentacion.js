@@ -16,4 +16,23 @@ export default css`
     h2 {
         color: #fff;
     }
+
+    .list-students {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 0;
+    }
+
+    .list-students li {
+        list-style: none;
+        padding: 18px;
+        cursor: pointer;
+        transition: all ease 0.23s;
+        border-radius: 10px;
+    }
+
+    .list-students li:hover {
+        background-color: #344475;
+    }
+
 `;

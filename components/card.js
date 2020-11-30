@@ -1,6 +1,6 @@
 import styles from 'components/styles/card' 
 
-export default function Card() {
+export default function Card({ name, title }) {
     return (
         <>
             <div className="card">
@@ -9,8 +9,8 @@ export default function Card() {
                 </div>
                 <div className="content-card">
                     <div className="info-group">
-                        <h3>Grupo 1</h3>
-                        <p>La importancia de JavaScript</p>
+                        <h3>{ name }</h3>
+                        <p>{ title }</p>
                     </div>
                     <div className="time">
                         <small>Time: 12 Min</small>

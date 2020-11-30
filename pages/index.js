@@ -12,10 +12,10 @@ export default function Home ({ posts }) {
     </Head>
     <Presentacion />
     <div className="container">
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
+      <Card name="Grupo 1" title="La importancia de JavaScript" />
+      <Card name="Grupo 2" title="La importancia de JavaScript"/>
+      <Card name="Grupo 3" title="La importancia de JavaScript"/>
+      <Card name="Grupo 4" title="La importancia de JavaScript"/>
 
     </div>
     <style jsx>
