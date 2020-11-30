@@ -42,8 +42,8 @@ export default function Header () {
                                             alt="Avatar del usuario"
                                         />
                                     </div>
-                                    <p>miguel2351@gmail.com</p>
-                                    <p>Miguel Hernández</p>
+                                    <p>rene.urbina95u.std.uni.edu.ni</p>
+                                    <p>Rene Enrique Urbina Rivera</p>
                                 </div>
                             </div>
                             <ul className="menu">

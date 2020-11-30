@@ -7,6 +7,9 @@ const style = css`
         display: flex;
         flex-direction: column;
         gap: 32px 0;
+        /* background-image: url(/images/FEC.png);
+        background-repeat: no-repeat;
+        background-position: center; */
     }
 
     @media screen and (min-width: 1200px) {

@@ -155,7 +155,7 @@ const style = css`
         }
 
         .user-info p {
-            color: #000;
+            color: #fff;
             font-size: 12px;
         }
 

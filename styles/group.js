@@ -6,6 +6,11 @@ const styles = css`
         padding: 12px;
     }
 
+    .header-group h1 {
+        padding: 12px;
+        position: relative;
+    }
+
     .groups {
         background-color: #212429;
         height: 100vh;
@@ -28,7 +33,7 @@ const styles = css`
         position: absolute;
         z-index: 0;
         top: 100px;
-        left: 100px;
+        left: 0;
         right: 0;
         bottom: 0;
     }
@@ -36,6 +41,7 @@ const styles = css`
     .background img {
         width: 100%;
         height: auto;
+        opacity: 0.25;
     }
 
     .list-group {
@@ -83,7 +89,7 @@ const styles = css`
         .container {
             display: grid;
             grid-template-areas: "col1 col2";
-            grid-template-columns: 15% 85%;
+            grid-template-columns: 20% 80%;
             grid-template-rows: auto;
         }
 

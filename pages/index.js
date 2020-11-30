@@ -8,7 +8,6 @@ export default function Home ({ posts }) {
   return <>
     <Head>
         <title>Inicio | Redacción Técnica</title>
-        <link rel="icon" href="https://uni.edu.ni/favicon.ico"/>
     </Head>
     <Presentacion />
     <div className="container">
@@ -16,6 +15,9 @@ export default function Home ({ posts }) {
       <Card name="Grupo 2" title="La importancia de JavaScript"/>
       <Card name="Grupo 3" title="La importancia de JavaScript"/>
       <Card name="Grupo 4" title="La importancia de JavaScript"/>
+      <Card name="Grupo 5" title="La importancia de JavaScript"/>
+      <Card name="Grupo 6" title="La importancia de JavaScript"/>
+      <Card name="Grupo 7" title="La importancia de JavaScript"/>
 
     </div>
     <style jsx>

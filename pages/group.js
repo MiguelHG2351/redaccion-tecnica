@@ -20,7 +20,7 @@ export default function Group() {
                 </section>
                 <section className="groups">
                     <div className="background">
-                        <img src="/images/xd.png" alt="Imagen de fondo v:"/>
+                        <img src="/images/FEC.png" alt="Imagen de fondo v:"/>
                     </div>
                     <Link href="/">
                         <a className="go-back">
@@ -64,6 +64,26 @@ export default function Group() {
                             <i className="material-icons">check_circle</i>
 
                             <Link href="/group/4">
+                                <a>Recursos</a>
+                            </Link>
+                        </li>
+                    </ul>
+                    <div className="header-group">
+                        <h1>Grupo 3</h1>
+                    </div>
+                    <ul className="list-group">
+                        <div className="line"></div>
+                        <li className="group">
+                            <i className="material-icons">check_circle</i>
+
+                            <Link href="/group/3">
+                                <a>Grupo 3</a>
+                            </Link>
+                        </li>
+                        <li className="group">
+                            <i className="material-icons">check_circle</i>
+
+                            <Link href="/group/3">
                                 <a>Recursos</a>
                             </Link>
                         </li>
