@@ -43,7 +43,7 @@ export default function Presentacion() {
             case "Andre":
                 return {
                     name: "Andre",
-                    image: '/images/XD.png',
+                    image: '/images/xd.png',
                     description: 'Programador con Python',
                     description2: 'C/++',
                     isVisible: true
@@ -51,7 +51,7 @@ export default function Presentacion() {
             case "Erick":
                 return {
                     name: "Erick",
-                    image: '/images/XD.png',
+                    image: '/images/xd.png',
                     description: 'Universidad Nacional de Ingenieria',
                     description2: 'C/++',
                     isVisible: true
