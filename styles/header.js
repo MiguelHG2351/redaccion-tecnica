@@ -64,7 +64,7 @@ const style = css`
         display: flex;
         align-items: center;
         padding: 16px 14px;
-        color: #7b887b;
+        color: rgb(209 209 209);
         text-decoration: none;
         transition: all ease 0.2s;
         outline: none;

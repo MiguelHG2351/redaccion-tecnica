@@ -57,7 +57,7 @@ const styles = css`
         position: absolute;
         width: 2px;
         background-color: #4a4e50;
-        left: 7.6%;
+        left: 31px;
         top: 42px;
         height: 45px;
         z-index: 4;
