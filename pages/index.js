@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Presentacion from 'components/presentacion'
+import Card from 'components/card'
 import style from '../styles/'
 
 export default function Home ({ posts }) {
@@ -8,13 +10,14 @@ export default function Home ({ posts }) {
         <title>Inicio | Redacción Técnica</title>
         <link rel="icon" href="https://uni.edu.ni/favicon.ico"/>
     </Head>
-    <h2>Hola</h2>
-    <ul>
-        <li>Enrique</li>
-        <li>Andres</li>
-        <li>Erick</li>
-    </ul>
+    <Presentacion />
+    <div className="container">
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
 
+    </div>
     <style jsx>
       { style }
     </style>

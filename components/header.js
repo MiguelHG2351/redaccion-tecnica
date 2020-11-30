@@ -56,7 +56,7 @@ export default function Header () {
                                     </Link>
                                 </li>
                                 <li className="list-menu">
-                                    <Link href="/videos">
+                                    <Link href="/group">
                                         <a>
                                             <i className="material-icons">play_circle_filled</i>
                                             Videos

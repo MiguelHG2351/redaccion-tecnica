@@ -1,10 +1,13 @@
 import css from 'styled-jsx/css'
 
 const style = css`
-
-li, h2 {
-    color: #000;
-}
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 32px 0;
+    }
 
 `
 
