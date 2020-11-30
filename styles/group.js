@@ -82,9 +82,20 @@ const styles = css`
     @media screen and (min-width: 992px) {
         .container {
             display: grid;
+            grid-template-areas: "col1 col2";
             grid-template-columns: 15% 85%;
             grid-template-rows: auto;
         }
+
+        .video-list {
+            grid-area: col2;
+        }
+
+        .groups {
+            grid-area: col1;
+
+        }
+
     }
 `;
 
