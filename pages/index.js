@@ -11,7 +11,6 @@ export default function Home ({ posts }) {
     <h2>Hola</h2>
     <ul>
         <li>Enrique</li>
-        <li>Miguel</li>
         <li>Andres</li>
         <li>Erick</li>
     </ul>
