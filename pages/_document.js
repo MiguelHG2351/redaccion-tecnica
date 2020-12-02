@@ -1,5 +1,4 @@
 import Document, { Head, NextScript, Html, Main } from "next/document";
-// import FnFooter from "../components/footer";
 
 export default class MyDocuemnt extends Document {
     render() {
@@ -20,7 +19,6 @@ export default class MyDocuemnt extends Document {
                 <body>
                     <Main />
                     <NextScript />
-                    {/* <FnFooter />     */}
 
                 </body>
             </Html>

@@ -12,7 +12,7 @@ export default function Home ({ posts }) {
     <Presentacion />
     <div className="container">
       <Card name="Grupo 1" title="La importancia de JavaScript" />
-      <Card name="Grupo 2" title="La importancia de JavaScript"/>
+      <Card name="Grupo 2" title="esbuild compilador hecho en GO"/>
       <Card name="Grupo 3" title="La importancia de JavaScript"/>
       <Card name="Grupo 4" title="La importancia de JavaScript"/>
       <Card name="Grupo 5" title="La importancia de JavaScript"/>

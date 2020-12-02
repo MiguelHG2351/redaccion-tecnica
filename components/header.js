@@ -1,4 +1,4 @@
-import style from 'styles/header'
+import style from 'components/styles/header'
 import { useState, useRef } from 'react'
 import Link from 'next/link'
 

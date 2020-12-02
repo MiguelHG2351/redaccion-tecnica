@@ -4,6 +4,7 @@ export const globalStyles = css.global`
     * {
         margin: 0;
         font-family: "Roboto", Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
     }
 
     :root {
@@ -11,7 +12,7 @@ export const globalStyles = css.global`
     }
 
     body {
-        background-color: #1b1e1e;
+        background-color: #121f3d;
     }
 
     .responsive-img {

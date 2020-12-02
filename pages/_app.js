@@ -1,5 +1,7 @@
 import Layout from "../components/Layout";
 import Header from "../components/header";
+import FnFooter from "../components/footer";
+
 
 function MyApp(props) {
     const { Component, pageProps } = props;
@@ -8,6 +10,7 @@ function MyApp(props) {
             <Layout>
                 <Header />
                 <Component {...pageProps} />
+                <FnFooter />    
             </Layout>
         </>
     );

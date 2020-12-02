@@ -2,7 +2,8 @@ import css from 'styled-jsx/css'
 
 export default css`
     .card {
-        background-color: #0d2058;
+        /* background-color: #0d2058; */
+        background-color: #24385b;
         border-radius: 16px;
         padding: 12px;
         cursor: pointer;

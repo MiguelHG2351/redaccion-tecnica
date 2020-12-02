@@ -64,7 +64,8 @@ const style = css`
         display: flex;
         align-items: center;
         padding: 16px 14px;
-        color: rgb(209 209 209);
+        /* color: rgb(209 209 209); */
+        color: #fff;
         text-decoration: none;
         transition: all ease 0.2s;
         outline: none;
@@ -72,7 +73,7 @@ const style = css`
     }
 
     .list-menu a:hover {
-
+        background-color: #3377ff;
     }
 
     .list-menu i {
@@ -125,6 +126,7 @@ const style = css`
             width: 100%;
             overflow: hidden;
             box-shadow: var(--shadow);
+            background-color: #24317a;
         }
 
         .container-sidenav {
@@ -167,14 +169,13 @@ const style = css`
         }
 
         .list-menu a {
-            border: 1px solid #333333;
-            border-radius: 6px;
-
+            border-radius: 12px;
+            background-color: #3377ff;
         }
         
         .list-menu a:hover {
-            color: #fff;
-            border: 1px solid rgba(255, 255, 255, .7);
+            border: none;
+            transform: scale(0.9);
         }
 
 
