@@ -1,4 +1,4 @@
-import { useReducer, useEffect } from "react";
+import { useReducer } from "react";
 
 import styles, { cardStyle } from "components/styles/presentacion";
 
@@ -35,7 +35,7 @@ export default function Presentacion() {
             case "Enrique":
                 return {
                     name: "Rene Enrique Urbina Rivera",
-                    image: 'https://outlook.office.com/owa/service.svc/s/GetPersonaPhoto?email=rene.urbina95u%40std.uni.edu.ni&UA=0&size=HR96x96',
+                    image: '/images/enrique.jpg',
                     description: 'Programador en Bajo Nivel con C/C++ ',
                     description2: 'Modelado 3D',
                     isVisible: true
@@ -79,11 +79,6 @@ export default function Presentacion() {
     }
 
     const [state, dispatch] = useReducer(reducer, initialState)
-
-    useEffect(() => {
-        console.log(state)
-    }, [state])
-    
 
     function Enrique() {
         dispatch({type: 'Enrique'})

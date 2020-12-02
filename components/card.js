@@ -5,7 +5,7 @@ export default function Card({ name, title }) {
     return (
         <>
             <Link href="/group">
-                <a>
+                <a title={ title }>
                     <div className="card">
                         <div className="header-card">
                             <img src="/images/xd.png" alt="Primer grupo"/>
@@ -13,11 +13,12 @@ export default function Card({ name, title }) {
                         <div className="content-card">
                             <div className="info-group">
                                 <h3>{ name }</h3>
-                                <p>{ title }</p>
+                                <p>{ title.replace(title.slice(20, title.length), '...') }</p>
                             </div>
                             <div className="time">
                                 <small>Time: 12 Min</small>
-                                <p>Archivos: 12</p>
+                                <br/>
+                                <small>Archivos: 12</small>
                                 
                             </div>
                         </div>
