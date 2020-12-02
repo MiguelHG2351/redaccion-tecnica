@@ -10,7 +10,6 @@ export default css`
 
     @media screen and (min-width: 1200px) {
         .footer {
-            margin-top: 120px;
             display: grid;
             padding: 12px 32px;
             grid-template-columns: 1fr 50% 1fr;

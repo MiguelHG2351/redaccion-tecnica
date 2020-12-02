@@ -88,6 +88,26 @@ export default function Group() {
                             </Link>
                         </li>
                     </ul>
+                    <div className="header-group">
+                        <h1>Grupo 4</h1>
+                    </div>
+                    <ul className="list-group">
+                        <div className="line"></div>
+                        <li className="group">
+                            <i className="material-icons">check_circle</i>
+
+                            <Link href="/group/3">
+                                <a>Grupo 4</a>
+                            </Link>
+                        </li>
+                        <li className="group">
+                            <i className="material-icons">check_circle</i>
+
+                            <Link href="/group/3">
+                                <a>Recursos</a>
+                            </Link>
+                        </li>
+                    </ul>
                 </section>
             </div>
 
