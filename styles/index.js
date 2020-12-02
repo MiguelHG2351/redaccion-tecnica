@@ -12,9 +12,34 @@ const style = css`
         background-position: center; */
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 285px) {
         .container {
             display: grid;
+            grid-column-gap: 18px;
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+        
+    }
+
+    @media screen and (min-width: 652px) {
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+        
+    }
+
+    @media screen and (min-width: 990px) {
+        .container {
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        .container {
             grid-column-gap: 12px;
             grid-template-columns: repeat(4, 1fr);
         }
