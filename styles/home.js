@@ -40,10 +40,10 @@ export default  css`
     }
 
     @media screen and (min-width: 768px) {
-        .video-info {
+        .video-info, .facultades {
             display: grid;
             grid-template-columns: 50% 50%;
-            
+
             align-items: center;
 
         }
