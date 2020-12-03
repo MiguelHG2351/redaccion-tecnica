@@ -1,12 +1,13 @@
 import Head from "next/head";
 import Link from "next/link";
 
-// Styles
-import styles from "./styles/group";
-
 // Components
 
 import MediaPlayer from "components/MediaPlayer";
+
+// Styles
+import styles from "../styles/group";
+
 
 export default function Group() {
     return (
