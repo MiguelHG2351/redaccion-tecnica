@@ -5,7 +5,7 @@ export default class Bezel {
     }
  
     parseValue(val) {
-        return val.toString().replace(' ', '').replace(/px|%/g, '').split(' ');
+        return val.toString().replace(/px|%/g, '').split(' ');
     }
 
     paint(ctx, geom, properties, args) {
@@ -13,8 +13,7 @@ export default class Bezel {
         const width = geom.width;
         const height = geom.height;
 
-        ctx.strokeStyle = bgColor
-
+        
         const [
             topLeftRadius,
             topRightRadius,
@@ -24,7 +23,6 @@ export default class Bezel {
         ctx.lineWidth = 2;
         const inset = ctx.lineWidth / 2
         ctx.strokeStyle = properties.get('--bezel-border-color');
-        debugger
         ctx.lineTo(topLeftRadius, inset);
         ctx.lineTo(width - topRightRadius, inset);
         ctx.lineTo(width - inset, topRightRadius);
@@ -33,6 +31,8 @@ export default class Bezel {
         ctx.lineTo(bottomLeftRadius, height - inset);
         ctx.lineTo(inset, height - bottomLeftRadius);
         ctx.lineTo(inset, topLeftRadius);
+        ctx.fillStyle = bgColor
+        ctx.fill();
         ctx.closePath();
         ctx.stroke();
     }

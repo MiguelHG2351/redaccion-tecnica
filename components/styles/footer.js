@@ -5,8 +5,34 @@ export default css`
     .footer {
         background-color: #03091e;
         color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px 0;
+        padding: 12px;
     }
 
+    .creadores {
+        margin-top: 24px;
+        line-height: 1.8;
+
+    }
+
+    .creadores h3 a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .picture-img {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .picture-img img {
+        width: 50%;
+        
+    }
 
     @media screen and (min-width: 1200px) {
         .footer {

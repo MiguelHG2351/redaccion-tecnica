@@ -23,15 +23,21 @@ export default css.global`
     }
 
     .btn-primary {
-        --background: rgb(83, 31, 226);
+        --background: #5266df;
         --bezel-radius: 20px 0 20px 0;
-        --bezel-border-color: #09f;
+        --bezel-border-color: #5266df;
         /* background-color: #5266df; */
+        background-color: transparent;
         color: #fff;
-        padding: 18px;
+        padding: 18px 28px;
         border-radius: 8px;
         transition: transform 0.3s ease-in-out;
         background-image: paint(bezel);
+    }
+
+    .reset-value-anchor {
+        text-decoration: none;
+        color: #fff;
     }
 
     .btn-primary:hover {

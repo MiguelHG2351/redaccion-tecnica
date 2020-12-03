@@ -18,4 +18,20 @@ export default  css`
         text-align: center;
     }
 
+    .content {
+        margin-top: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px 0;
+    }
+
+    .video-info h2 {
+        margin-bottom: 15px;
+    }
+
+    .video-info img {
+        vertical-align: bottom;
+    }
+
 `

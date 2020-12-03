@@ -5,9 +5,21 @@ export default function FnFooter() {
         <>
             <footer className="footer">
                 <div className="creadores">
-                    <h3>Rene Enrique Urbina Rivera</h3>
-                    <h3>Erick Espinoza</h3>
-                    <h3>Andre Valentín Rivaz Velazques</h3>
+                    <h3>
+                        <a target="__blank" href="https://github.com/DemonSlayer412">
+                            Rene Enrique Urbina Rivera
+                        </a>
+                    </h3>
+                    <h3>
+                        <a target="__blank" href="https://github.com/Egex563">
+                            Erick Espinoza
+                        </a>
+                    </h3>
+                    <h3>
+                        <a target="__blank" href="https://github.com/Andwan2">
+                            Andre Valentín Rivaz Velazques
+                        </a>
+                    </h3>
                 </div>
                 <div className="footer-menu">
                     <div className="grupos">
