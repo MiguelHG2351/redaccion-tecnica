@@ -56,4 +56,18 @@ export default  css`
         }
     }
 
+    @media screen and (min-width: 1350px) {
+        .container {
+            width: 1250px;
+        }
+
+        .video-info, .facultades {
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+            align-items: center;
+
+        }
+    }
+
 `
