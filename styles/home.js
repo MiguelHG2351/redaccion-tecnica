@@ -26,7 +26,14 @@ export default  css`
         gap: 40px 0;
     }
 
-    .video-info h2 {
+    .title-info p {
+        color: rgb(36 35 35 / 75%);
+        font-size: 16px;
+        text-align: left;
+
+    }
+
+    .title-info h2, .title-info h2 {
         margin-bottom: 15px;
     }
 

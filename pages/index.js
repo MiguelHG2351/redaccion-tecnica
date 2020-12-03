@@ -31,15 +31,22 @@ export default function Home() {
                         </button>
                     </div>
                     <div className="video-info">
-                        <h2>El reproductor de videos es responsive design</h2>
+                        <div className="title-info">
+                            <h2>El reproductor de videos es responsive design</h2>
+                            <p>Para tener acceso desde todos los dispositivos se aplico responsive design a todas las rutas del sitio web</p>
+                        </div>
                         <img
                             src="/images/home.png"
                             className="responsive-img"
                             alt="XD"
-                        />
+                            />
                     </div>
                     <div className="facultades">
-                        <h2>Entrega de 3 facultades</h2>
+                        <div className="title-info">
+                            <h2>Entrega de 2 facultades</h2>
+                            <p>Los estudiantes de la carrera de ingeniería en computación y los de la facultad de tecnología de la construcción</p>
+
+                        </div>
                         <img
                             src="/images/facultades.png"
                             className="responsive-img"
