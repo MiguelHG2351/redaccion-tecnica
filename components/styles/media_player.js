@@ -4,5 +4,6 @@ export default css`
     .media-player video {
         object-fit: cover;
         width: 100%;
+        vertical-align: bottom;
     }
 `

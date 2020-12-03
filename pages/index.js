@@ -6,6 +6,7 @@ export default function Home() {
         <>
             <Head>
                 <title>Home | Redacción Técnica</title>
+                <script type="text/javascript" src='/houdini.js'></script>
             </Head>
             <section className="container">
                 <h3>Investigación <br/>Redacción Técnica</h3>
