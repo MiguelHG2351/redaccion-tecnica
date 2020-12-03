@@ -1,6 +1,6 @@
 import css from 'styled-jsx/css'
 
-export default css`
+export default  css`
     .container {
         width: 90%;
         margin: 35px auto;

@@ -1,4 +1,4 @@
-import styles from "pages/styles/media_player";
+import styles from "components/styles/media_player";
 
 export default function MediaPlayer() {
     return (

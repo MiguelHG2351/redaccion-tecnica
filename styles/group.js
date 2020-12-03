@@ -1,6 +1,6 @@
 import css from "styled-jsx/css";
 
-const styles = css`
+export default css`
 
     .container {
         margin-bottom: 120px;
@@ -135,5 +135,3 @@ const styles = css`
 
     }
 `;
-
-export default styles;
