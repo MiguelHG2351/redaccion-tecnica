@@ -14,6 +14,10 @@ export default class MyDocuemnt extends Document {
                         rel="stylesheet"
                     />
                     <link rel="icon" href="https://uni.edu.ni/favicon.ico" />
+                    <meta name="og:url" content="https://redaccion-tecnica.vercel.app/" />
+                    <meta name="og:image" content="/images/logo-uni.png" />
+                    <meta name="og:description" content="Proyecto Final de redacción Técnica" />
+                    <meta name="og:type" content="website" />
                 </Head>
                 <body>
                     <Main />

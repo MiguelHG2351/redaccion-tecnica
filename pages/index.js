@@ -6,6 +6,7 @@ export default function Home() {
     return (
         <>
             <Head>
+                <meta name="og:title" content="Home | Redacción Técnica" />
                 <title>Home | Redacción Técnica</title>
                 <script type="text/javascript" src="/houdini.js"></script>
             </Head>
