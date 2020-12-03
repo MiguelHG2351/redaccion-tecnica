@@ -18,11 +18,8 @@
     "firebase": "^8.1.1",
     "firebase-tools": "^8.16.2",
     "isomorphic-unfetch": "^3.1.0",
-    "mongodb": "^3.6.2",
-    "mongoose": "^5.10.8",
     "next": "^9.5.4",
     "next-connect": "^0.9.0",
-    "next-pwa": "^3.1.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-jsx": "^3.3.0"
