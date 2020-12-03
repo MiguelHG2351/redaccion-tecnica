@@ -1,6 +1,19 @@
 import css from 'styled-jsx/css'
 
 const style = css`
+
+    .header-visible {
+        background-color: #24317a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .title-site {
+        color: #fff;
+        font-size: 12px;
+    }
+
     .sidenav {
         position: fixed;
         top: 0;
@@ -102,10 +115,6 @@ const style = css`
 
     .btn-menu {
         background-color: transparent;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        border: 1px solid #fff;
         padding: 4px 14px;
         transition: background ease 0.17s;
         color: #fff;

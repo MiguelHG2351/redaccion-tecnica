@@ -91,9 +91,12 @@ export default function Header () {
                         </div>
                     </div>
                     <div className="header-visible">
-                        <button className="btn-menu" onClick={toggleMenu}>
+                        <button className="btn btn-menu" onClick={toggleMenu}>
                             <i className="material-icons">sort</i>
                         </button>
+                        <div className="title-site">
+                            <h1>Redacción Técnica</h1>
+                        </div>
                     </div>
                 </div>
             </header>

@@ -1,4 +1,4 @@
-import { globalStyles } from '../styles/globals'
+import { globalStyles } from '../pages/styles/globals'
 
 export default function Layout (props) {
   return <>

@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 // Styles
-import styles from "../styles/group";
+import styles from "./styles/group";
 
 // Components
 

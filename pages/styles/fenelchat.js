@@ -7,6 +7,7 @@ const style = css`
         display: flex;
         flex-direction: column;
         gap: 32px 0;
+        margin-bottom: 150px;
         /* background-image: url(/images/FEC.png);
         background-repeat: no-repeat;
         background-position: center; */
