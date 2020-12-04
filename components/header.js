@@ -56,7 +56,7 @@ export default function Header () {
                                     </Link>
                                 </li>
                                 <li className="list-menu">
-                                    <Link href="/group">
+                                    <Link href="/groups">
                                         <a>
                                             <i className="material-icons">play_circle_filled</i>
                                             Videos
@@ -72,10 +72,10 @@ export default function Header () {
                                     </Link>
                                 </li>
                                 <li className="list-menu">
-                                    <Link href="/group">
+                                    <Link href="/groups">
                                         <a onClick={closeMenu}>
                                             <i className="material-icons">group</i>
-                                            Grupo
+                                            Grupos
                                         </a>
                                     </Link>
                                 </li>

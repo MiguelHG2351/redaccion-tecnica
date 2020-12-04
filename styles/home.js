@@ -64,7 +64,6 @@ export default  css`
         .video-info, .facultades {
             display: grid;
             grid-template-columns: 50% 50%;
-
             align-items: center;
 
         }
