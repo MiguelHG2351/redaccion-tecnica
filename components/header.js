@@ -56,7 +56,7 @@ export default function Header () {
                                     </Link>
                                 </li>
                                 <li className="list-menu">
-                                    <Link href="/groups">
+                                    <Link href="/videos">
                                         <a>
                                             <i className="material-icons">play_circle_filled</i>
                                             Videos
@@ -64,18 +64,10 @@ export default function Header () {
                                     </Link>
                                 </li>
                                 <li className="list-menu">
-                                    <Link href="/images">
-                                        <a>
-                                            <i className="material-icons">image</i>
-                                            Imagenes
-                                        </a>
-                                    </Link>
-                                </li>
-                                <li className="list-menu">
                                     <Link href="/groups">
                                         <a onClick={closeMenu}>
                                             <i className="material-icons">group</i>
-                                            Grupos
+                                            Acerca del sitio
                                         </a>
                                     </Link>
                                 </li>
@@ -83,7 +75,7 @@ export default function Header () {
                                     <Link href="/pacmanxd">
                                         <a onClick={closeMenu}>
                                             <i className="material-icons">games</i>
-                                            Documentos
+                                            Web de la UNI
                                         </a>
                                     </Link>
                                 </li>

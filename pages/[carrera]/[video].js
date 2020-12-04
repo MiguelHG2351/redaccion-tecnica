@@ -35,7 +35,7 @@ function GrupoVideo({router}) {
     return (
         <>
             <Head>
-                <title>Redacción</title>
+                <title>Redacción | {infoVideo.name}</title>
             </Head>
             <div className="container">
                 <section className="video-list">
