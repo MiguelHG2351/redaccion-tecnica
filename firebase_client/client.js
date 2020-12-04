@@ -20,10 +20,7 @@ function getData() {
   const getStorage = firebase.storage();
   const refStorage = getStorage.ref();
   
-  let tempData = {
-  
-  }
-
+  let tempData = [];
 
   let carrera = "agricola";
   let video = "Cultivo del cacao.mp4";
@@ -32,10 +29,10 @@ function getData() {
     .child(`videos/${carrera}/${video}`)
     .getDownloadURL()
     .then(function (url) {
-      tempData.data = url;
+      tempData.push(url);
+      return { tempData }
     });
 
-    return tempData
 
 }
 
