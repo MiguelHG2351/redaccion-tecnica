@@ -1,15 +1,20 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 import styles from 'styles/grupo'
-import Axios from "axios";
+import { getData } from 'firebase_client/client'
+
+
 
 export default function Grupo(props) {
     const router = useRouter();
     const { grupo, carrera } = router.query;
+    console.log(props)
+    const data = getData()
+    console.log(data)
     return (
         <>
             <Head>
-                <title>Redacción | {grupo}</title>
+                <title>Redacción</title>
             </Head>
             <section className="section-search">
                 <form>
@@ -22,15 +27,3 @@ export default function Grupo(props) {
         </>
     );
 }
-
-export async function getServerSideProps({req}) {
-
-    // const BASE_URL = req ?`${req.protocol}://${req.get('Host')}` : '';
-    const BASE_URL = 'http://localhost:3000'
-    const response = await Axios.get(`${BASE_URL}/api/getVideo`)
-    const data = response.data
-
-    return ({
-      props: {data}, // will be passed to the page component as props
-    })
-  }
