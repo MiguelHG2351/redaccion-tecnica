@@ -54,28 +54,31 @@ function GrupoVideo({router}) {
                         </a>
                     </Link>
                     {
-                        <>
-                        <div className="header-group">
-                            <h1>Grupo 1</h1>
-                        </div>
-                        <ul className="list-group">
-                            <div className="line"></div>
-                            <li className="group">
-                                <i className="material-icons">check_circle</i>
-                                <Link href="/grupos/first">
-                                    <a>Grupo 1</a>
-                                </Link>
-                            </li>
+                        data[carrera].map((data, index)=> {
+                            return <>
+                            <div className="header-group">
+                                <h1>Grupo {index+1}</h1>
+                            </div>
+                            <ul className="list-group">
+                                <div className="line"></div>
+                                <li className="group">
+                                    <i className="material-icons">check_circle</i>
+                                    <Link href={`/${carrera}/${data.name}`}>
+                                        <a>Grupo {index+1}</a>
+                                    </Link>
+                                </li>
+    
+                                <li className="group">
+                                    <i className="material-icons">check_circle</i>
+    
+                                    <Link href="/group/2">
+                                        <a>No hay Recursos</a>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </>
 
-                            <li className="group">
-                                <i className="material-icons">check_circle</i>
-
-                                <Link href="/group/2">
-                                    <a>Recursos</a>
-                                </Link>
-                            </li>
-                        </ul>
-                    </>
+                        })
                     }
                 </section>
             </div>
