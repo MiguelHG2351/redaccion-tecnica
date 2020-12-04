@@ -1,7 +1,8 @@
+import { useEffect } from 'react'
 import { useRouter } from "next/router";
 import Head from "next/head";
 import styles from 'styles/grupo'
-import { getData } from 'firebase_client/client'
+import getData from 'firebase_client/client'
 
 
 
@@ -9,8 +10,13 @@ export default function Grupo(props) {
     const router = useRouter();
     const { grupo, carrera } = router.query;
     console.log(props)
-    const data = getData()
-    console.log(data)
+    
+    useEffect(() => {
+        let data = getData()
+        console.log(data)
+
+    }, [])
+
     return (
         <>
             <Head>
