@@ -22,7 +22,7 @@ export default JSON.stringify({
         },
         {
             "url": "https://firebasestorage.googleapis.com/v0/b/redaccion-tecnica-f79d8.appspot.com/o/videos%2Fagricola%2FLa%20tecnolog%C3%ADa%20agricola.mp4?alt=media&token=4667bdee-39db-44ce-9a14-d850067e4cf4",
-            "name": "La tecnología agricola."
+            "name": "La tecnología agricola"
         },
         {
             "url": "https://firebasestorage.googleapis.com/v0/b/redaccion-tecnica-f79d8.appspot.com/o/videos%2Fagricola%2FLos%20diferentes%20procesos%20que%20tiene%20las%20maquinarias%20agr%C3%ADcolas%20para%20la%20agricultura-%20UNI%2017_11_20_2.mp4?alt=media&token=d878d22b-e080-480e-b6d2-d5067ac958f8",
@@ -58,19 +58,19 @@ export default JSON.stringify({
     "computacion": [
         {
             "url": "https://firebasestorage.googleapis.com/v0/b/redaccion-tecnica-f79d8.appspot.com/o/videos%2Fcomputacion%2FLa%20comunicacion%20en%20el%20area%20de%20la%20tecnologia.mp4?alt=media&token=f0385690-1835-4895-bff9-13e51c1098c4",
-            "name": "La comunicacion en el area de la tecnologia."
+            "name": "La comunicacion en el area de la tecnologia"
         },
         {
             "url": "https://firebasestorage.googleapis.com/v0/b/redaccion-tecnica-f79d8.appspot.com/o/videos%2Fcomputacion%2FManejo%20de%20las%20clases%20en%20linea%20del%20II%20corte%20primer%20a%C3%B1o.mp4?alt=media&token=a0223c98-34f5-4147-a474-7ac6fc3a6bf8",
-            "name": "Manejo de las clases en linea del II corte primer año."
+            "name": "Manejo de las clases en linea del II corte primer año"
         },
         {
             "url": "https://firebasestorage.googleapis.com/v0/b/redaccion-tecnica-f79d8.appspot.com/o/videos%2Fcomputacion%2FProceso%20de%20adaptaci%C3%B3n%20de%20un%20estudiante%20de%20nuevo%20ingreso.mp4?alt=media&token=00516373-8031-4706-9d54-31bcef15422b",
-            "name": "Proceso de adaptación de un estudiante de nuevo ingreso."
+            "name": "Proceso de adaptación de un estudiante de nuevo ingreso"
         },
         {
             "url": "https://firebasestorage.googleapis.com/v0/b/redaccion-tecnica-f79d8.appspot.com/o/videos%2Fcomputacion%2FProceso%20de%20virtualizacion%20de%20la%20asignatura%20de%20redaccion%20tecnica%20UNI%20a%20causa%20del%20Covid%2019.mp4?alt=media&token=85fcd241-004f-4051-941c-8127cc39b0f3",
-            "name": "Proceso de virtualizacion de la asignatura de redaccion tecnica UNI a causa del Covid 19."
+            "name": "Proceso de virtualizacion de la asignatura de redaccion tecnica UNI a causa del Covid 19"
         }
     ]
 })

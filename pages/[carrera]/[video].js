@@ -1,5 +1,6 @@
-import { useEffect } from 'react'
-import { useRouter } from "next/router";
+import { withRouter } from 'next/router'
+
+import { useState, useEffect } from 'react'
 import MediaPlayer from "components/MediaPlayer";
 import Head from "next/head";
 import Link from "next/link";
@@ -7,21 +8,30 @@ import styles from 'styles/group'
 import getData from 'data/info'
 
 
-export default function Grupo(props) {
-    const router = useRouter();
+function GrupoVideo({router}) {
 
-    function reducer(state, action) {
-        return action
-    }
-
-    const { grupo, carrera } = router.query;
-    const data = JSON.parse(getData)
     
-    useEffect(() => {
-        let getData = data["agricola"].find(p => p.name == 'Abonos organicos')
-        
-    }, [])
+    
+    const { carrera, video } = router.query
 
+    const data = JSON.parse(getData)
+
+    
+    const [infoVideo, setInfoVideo] = useState({})
+    // if(carrera != undefined && video != undefined) {
+        // }
+        
+    useEffect(() => {
+        let url;
+        if(carrera != undefined) {
+            url = data[carrera].find(element => element.name == video) || router.push('/')
+            console.log(url)
+            setInfoVideo(url)
+        }
+
+    }, [router.query])
+
+    
     return (
         <>
             <Head>
@@ -29,7 +39,9 @@ export default function Grupo(props) {
             </Head>
             <div className="container">
                 <section className="video-list">
-                    <MediaPlayer video_url={"https://firebasestorage.googleapis.com/v0/b/redaccion-tecnica-f79d8.appspot.com/o/videos%2Fagricola%2FCultivo%20del%20cacao.mp4?alt=media&token=7b9a7c2e-0209-4a79-b7c9-b6fa551ac695"} />
+                    {
+                        <MediaPlayer video_url={infoVideo.url} />
+                    }
                 </section>
                 <section className="groups">
                     <div className="background">
@@ -130,3 +142,4 @@ export default function Grupo(props) {
     );
 }
 // darle el id y cambiarlo por estados
+export default withRouter(GrupoVideo)
