@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useReducer, useEffect } from 'react'
 import { useRouter } from "next/router";
 import MediaPlayer from "components/MediaPlayer";
 import Head from "next/head";
@@ -9,10 +9,20 @@ import getData from 'data/info'
 
 export default function Grupo(props) {
     const router = useRouter();
+
+    function reducer(state, action) {
+        return 
+    }
+
     const { grupo, carrera } = router.query;
+    const [stateURL, dispatch] = useReducer(reducer, initialState)
     const data = JSON.parse(getData)
-    debugger
     
+    useEffect(() => {
+        let getData = data["agricola"].find(p => p.name == 'Abonos organicos')
+        
+    }, [url])
+
     return (
         <>
             <Head>
