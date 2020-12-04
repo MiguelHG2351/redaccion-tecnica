@@ -1,5 +1,5 @@
 import firebase from 'firebase/app'
-import firebase_store from 'firebase'
+import firebase_storage from 'firebase'
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -16,18 +16,14 @@ const firebaseConfig = {
 !firebase.apps.length && firebase.initializeApp(firebaseConfig)
 
 
-export function getData() {
-	// debugger
-	const getStorage = firebase_store.storage()
+export async function getData() {
+	const getStorage = firebase_storage.storage()
 	const refStorage = getStorage.ref()
 	
 	let carrera = 'agricola'
 	let video = 'Cultivo del cacao.mp4'
 	// const data = getStorage.refFromURL(`gs://redaccion-tecnica-f79d8.appspot.com/videos/${carrera}/${video}`)
-	
-	const getVideoUrl = refStorage.child(`videos/${carrera}/${video}`).getDownloadURL().then(function(url) {
-		return url
-	}).catch(function(err) { console.log('F en el chat')})
+	const getVideoUrl = await refStorage.child(`videos/${carrera}/${video}`).getDownloadURL()
 
 	return {
 		getVideoUrl
