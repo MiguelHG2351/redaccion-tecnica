@@ -23,7 +23,7 @@ export default function Home() {
                 <section className="content">
                     <div className="go-group">
                         <button className="btn btn-primary">
-                            <Link href="/groups">
+                            <Link href="/search">
                                 <a className="reset-value-anchor">
                                     Ver grupos
                                 </a>
