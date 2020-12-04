@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { withRouter } from 'next/router'
 
 import { useState, useEffect } from 'react'
@@ -54,9 +55,9 @@ function GrupoVideo({router}) {
                         </a>
                     </Link>
                     {
-                        carrera.length > 0 &&
+                        carrera != undefined &&
                         data[carrera].map((data, index)=> {
-                            return <>
+                            return <Fragment key={index}>
                             <div className="header-group">
                                 <h1>Grupo {index+1}</h1>
                             </div>
@@ -77,7 +78,7 @@ function GrupoVideo({router}) {
                                     </Link>
                                 </li>
                             </ul>
-                        </>
+                        </Fragment>
 
                         })
                     }
