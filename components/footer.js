@@ -12,12 +12,12 @@ export default function FnFooter() {
                     </h3>
                     <h3>
                         <a target="__blank" href="https://github.com/Egex563">
-                            Erick Espinoza
+                            Erick Joao Espinoza Donayre
                         </a>
                     </h3>
                     <h3>
                         <a target="__blank" href="https://github.com/Andwan2">
-                            Andre Valentín Rivaz Velazques
+                            Andre Valentín Rivas Velasquez
                         </a>
                     </h3>
                 </div>

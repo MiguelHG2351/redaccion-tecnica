@@ -1,24 +1,24 @@
 import Link from 'next/link'
 import styles from 'components/styles/card' 
 
-export default function Card({ name, title }) {
+export default function Card({ name, title, link, images, videos }) {
     return (
         <>
-            <Link href="/group">
+            <Link href={link}>
                 <a title={ title }>
                     <div className="card">
                         <div className="header-card">
-                            <img src="/images/xd.png" alt="Primer grupo"/>
+                            <img src={images} className="responsive-img" alt="Primer grupo"/>
                         </div>
                         <div className="content-card">
                             <div className="info-group">
                                 <h3>{ name }</h3>
-                                <p>{ title.replace(title.slice(20, title.length), '...') }</p>
+                                <p>{ title.length > 20 ? title.replace(title.slice(20, title.length), '...') : title  }</p>
                             </div>
                             <div className="time">
-                                <small>Time: 12 Min</small>
+                                <small>Videos: {videos}</small>
                                 <br/>
-                                <small>Archivos: 12</small>
+                                <small>Archivos: {videos}</small>
                                 
                             </div>
                         </div>
