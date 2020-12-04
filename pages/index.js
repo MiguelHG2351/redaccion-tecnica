@@ -24,34 +24,58 @@ export default function Home() {
                     <div className="go-group">
                         <button className="btn btn-primary">
                             <Link href="/search">
-                                <a className="reset-value-anchor">
-                                    Ver grupos
-                                </a>
+                                <a className="reset-value-anchor">Ver grupos</a>
                             </Link>
                         </button>
                     </div>
                     <div className="video-info">
                         <div className="title-info">
-                            <h2>El reproductor de videos es responsive design</h2>
-                            <p>Para tener acceso desde todos los dispositivos se aplico responsive design a todas las rutas del sitio web</p>
+                            <h2>
+                                El reproductor de videos es responsive design
+                            </h2>
+                            <p>
+                                Para tener acceso desde todos los dispositivos
+                                se aplico responsive design a todas las rutas
+                                del sitio web
+                            </p>
                         </div>
                         <img
-                            src="/images/home.png"
+                            src="/images/webp/home.webp"
                             className="responsive-img"
                             alt="XD"
-                            />
+                        />
                     </div>
                     <div className="facultades">
                         <div className="title-info">
                             <h2>Entrega de 2 facultades</h2>
-                            <p>Los estudiantes de la carrera de ingeniería en computación y los de la facultad de tecnología de la construcción</p>
-
+                            <p>
+                                Los estudiantes de la carrera de ingeniería en
+                                computación y los de la facultad de tecnología
+                                de la construcción
+                            </p>
                         </div>
                         <img
-                            src="/images/facultades.png"
+                            src="/images/webp/facultades.webp"
                             className="responsive-img"
                             alt="XD"
                         />
+                    </div>
+
+                    <div className="profe">
+                        <img
+                            src="/images/webp/profe.webp"
+                            className="responsive-img"
+                            alt="XD"
+                        />
+                        <div className="title-info">
+                            <h2>Profesora:  MARÍA DE LOURDES REYNOZA GÓMEZ</h2>
+                            <h3>Departamento de Idiomas</h3>
+                            <p>
+                                Los estudiantes de la carrera de ingeniería en
+                                computación y los de la facultad de tecnología
+                                de la construcción
+                            </p>
+                        </div>
                     </div>
                 </section>
             </section>

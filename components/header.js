@@ -38,7 +38,7 @@ export default function Header () {
                                 <div className="user-info">
                                     <div className="avatar">
                                         <img
-                                            src="/images/minecraft.jpg"
+                                            src="/images/webp/minecraft.webp"
                                             alt="Avatar del usuario"
                                         />
                                     </div>
@@ -66,7 +66,7 @@ export default function Header () {
                                 <li className="list-menu">
                                     <Link href="/groups">
                                         <a onClick={closeMenu}>
-                                            <i className="material-icons">group</i>
+                                            <i className="material-icons">info</i>
                                             Acerca del sitio
                                         </a>
                                     </Link>

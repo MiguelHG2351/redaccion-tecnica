@@ -65,9 +65,9 @@ export default function Videos() {
             <h2>Ir Directo a una carrera en especifica</h2>
         </div>
         <section className="options">
-            <Card videos={12} name="Ingeniería agricola" images='https://archivodenoticias.uni.edu.ni/img/Articulos/2019/01/28//20190125_090811.jpg' title="Facultdad: FTC" link="/agricola/Cultivo%20del%20cacao" />
-            <Card videos={1} name="Ingeniería civil" images='https://uni.edu.ni/assets/images/seleccion/civil%20ch.jpeg' title="Facultad: FTC" link="/civil/Construcción de invernaderos sostenibles" />
-            <Card videos={4} name="Ingeniería en Computación" images='https://uni.edu.ni/assets/images/rusb/021.jpg' title="Facultad: FEC" link="/computacion/La comunicacion en el area de la tecnologia" />
+            <Card videos={12} name="Ingeniería agricola" images='/images/webp/agricola.webp' title="Facultdad: FTC" link="/agricola/Cultivo%20del%20cacao" />
+            <Card videos={1} name="Ingeniería civil" images='/images/civil.jpeg' title="Facultad: FTC" link="/civil/Construcción de invernaderos sostenibles" />
+            <Card videos={4} name="Ingeniería en Computación" images='/images/webp/computacion.webp' title="Facultad: FEC" link="/computacion/La comunicacion en el area de la tecnologia" />
         </section>
         <style jsx>
             { styles }
