@@ -54,7 +54,7 @@ function GrupoVideo({router}) {
                         </a>
                     </Link>
                     {
-                        carrera.length > 0
+                        carrera.length > 0 &&
                         data[carrera].map((data, index)=> {
                             return <>
                             <div className="header-group">
