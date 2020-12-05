@@ -20,7 +20,8 @@ const style = css`
         left: 0;
         bottom: 0;
         width: 75%;
-        background-color: #212429;
+        /* background-color: #212429; */
+        background-color: #03091e;
         transition: all ease 0.35s;
         transform: translateX(-3000px);
         z-index: 10;

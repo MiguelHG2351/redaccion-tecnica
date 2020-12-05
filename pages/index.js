@@ -68,12 +68,12 @@ export default function Home() {
                             alt="XD"
                         />
                         <div className="title-info">
-                            <h2>Profesora:  MARÍA DE LOURDES REYNOZA GÓMEZ</h2>
-                            <h3>Departamento de Idiomas</h3>
+                            <h2 style={{textAlign: 'center'}}>MARÍA DE LOURDES REYNOZA GÓMEZ</h2>
+                            <h3 style={{fontSize: '18px'}}>Departamento de Idiomas</h3>
                             <p>
-                                Los estudiantes de la carrera de ingeniería en
-                                computación y los de la facultad de tecnología
-                                de la construcción
+                                Investigación documental de carreras en
+                                ingeniería en computación y agrícola de la
+                                universidad nacional de ingeniería
                             </p>
                         </div>
                     </div>

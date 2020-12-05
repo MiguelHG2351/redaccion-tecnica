@@ -64,7 +64,7 @@ export default function Header () {
                                     </Link>
                                 </li>
                                 <li className="list-menu">
-                                    <Link href="/groups">
+                                    <Link href="/about">
                                         <a onClick={closeMenu}>
                                             <i className="material-icons">info</i>
                                             Acerca del sitio
