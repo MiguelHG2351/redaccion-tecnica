@@ -79,7 +79,7 @@ const style = css`
         align-items: center;
         padding: 16px 14px;
         /* color: rgb(209 209 209); */
-        color: #fff;
+        color: #01f9f8;
         text-decoration: none;
         transition: all ease 0.2s;
         outline: none;
@@ -179,6 +179,7 @@ const style = css`
         }
 
         .list-menu a {
+            color: #fff;
             border-radius: 12px;
             background-color: #3377ff;
         }

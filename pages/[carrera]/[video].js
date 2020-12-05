@@ -26,7 +26,6 @@ function GrupoVideo({router}) {
         let url;
         if(carrera != undefined) {
             url = data[carrera].find(element => element.name == video) || router.push('/')
-            console.log(url)
             setInfoVideo(url)
         }
 

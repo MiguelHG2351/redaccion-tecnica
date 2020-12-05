@@ -46,6 +46,27 @@ export default  css`
         background-size: cover;
     }
 
+    .profe {
+        border-radius: 8px;
+        border-top: 8px solid blue;
+        box-shadow: 0px 1px 7px 5px rgba(0,0,0,0.15);
+    }
+
+    .profe img {
+        vertical-align: bottom;
+    }
+
+    .profe .title-info {
+        background-color: #09f;
+        padding: 18px;
+        color: #fff;
+    }
+
+    .profe .title-info p {
+        color: #fff;
+        padding: 20px;
+    }
+
     @media screen and (min-width: 768px) {
         .video-info, .facultades {
             display: grid;
