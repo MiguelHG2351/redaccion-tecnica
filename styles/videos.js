@@ -8,6 +8,10 @@ export default css`
         position: relative;
     }
 
+    .search-video h3 {
+        color: #5e5d5d;
+    }
+
     .options  {
         display: flex;
         flex-direction: column;

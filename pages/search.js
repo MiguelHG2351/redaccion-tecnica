@@ -10,13 +10,19 @@ export default function Videos() {
     const [carrera, setCarrera] = useState('')
     const [filter, setFilter] = useState('')
     const [letter, setLetter] = useState('')
+    const [wait, setWait] = useState('')
     const parseData = JSON.parse(data)
 
     function searchGroup(e) {
+        if(letter.length == 1) setWait('Buscando')
         if(carrera.length > 0) {
             setLetter(e.currentTarget.value)
-
+            
         }
+    }
+    
+    function changeStateWait() {
+        if(letter.length == 0) setWait('')
     }
 
     function search(e) {
@@ -31,7 +37,7 @@ export default function Videos() {
         <section className="search-video">
             <form className="form" onSubmit={search}>
                 <div className="background-search">
-                    <input type="text" onInput={searchGroup} name="video"/>
+                    <input type="text" onInput={searchGroup} name="video" onBlur={changeStateWait}/>
                     <div className="summary" onClick={() => setFilter(!filter)}>
                         <button className="btn"><i className="material-icons">filter_alt</i></button>
                     </div>
@@ -47,22 +53,26 @@ export default function Videos() {
                 </div>
             </form>
         </section>
+        <section className="search-video">
+            <h3>Resultados de búsqueda:</h3>
+        </section>
         <section className="options">
             {
                 // levenshtein.get(e.currentTarget.value)
-                letter.length > 8 &&
+                letter.length > 8 ?
                 parseData[carrera].map((data, index) => {
                     // debugger
-                    if(data.name.indexOf(letter) >= 0) {
+                    if(data.name.toLowerCase().indexOf(letter.toLowerCase()) >= 0) {
                         return <Card key={index} videos={12} name={data.name} images={data.image} title={data.carrera} link={data.link+data.name} />
-
                     }
                 })
+                :
+                <p>{wait}</p>
                 // console.log(e.currentTarget.value)
             }
         </section>
         <div className="search-video">
-            <h2>Ir Directo a una carrera en especifica</h2>
+            <h3>Ir Directo a una carrera en especifica</h3>
         </div>
         <section className="options">
             <Card videos={12} name="Ingeniería agricola" images='/images/webp/agricola.webp' title="Facultdad: FTC" link="/agricola/Cultivo%20del%20cacao" />

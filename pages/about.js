@@ -6,14 +6,26 @@ export default function About() {
         <>
             <Head>
                 <title>Acerca del sitio</title>
+                <meta name="description" content="Breve descripción del sitio web"/>
             </Head>
-            <section>
-                <p>
-                    Este sitio ha sido creado con propósitos académicos e
-                    informativos para la asignatura de redacción técnica de la
-                    carrera de ingeniería en computación en el año 2020 de la
-                    universidad nacional de ingeniería.
-                </p>
+            <section className="container">
+                <div className="header-about">
+                    <h1>Acerca de este sitio</h1>
+                </div>
+                <div className="description">
+                    <div className="image-description">
+                        <img src="/images/programacion.jpg" className="responsive-img" alt="Programación"/>
+                    </div>
+                    <div className="info">
+                        <p>
+                            Este sitio ha sido creado con propósitos académicos e
+                            informativos para la asignatura de redacción técnica de la
+                            carrera de ingeniería en computación en el año 2020 de la
+                            universidad nacional de ingeniería.
+                        </p>
+                    </div>
+
+                </div>
                 <br/>
 
                 <p>

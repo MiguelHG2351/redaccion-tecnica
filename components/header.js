@@ -57,7 +57,7 @@ export default function Header () {
                                 </li>
                                 <li className="list-menu">
                                     <Link href="/search">
-                                        <a>
+                                        <a onClick={closeMenu}>
                                             <i className="material-icons">play_circle_filled</i>
                                             Videos
                                         </a>
@@ -72,7 +72,7 @@ export default function Header () {
                                     </Link>
                                 </li>
                                 <li className="list-menu">
-                                    <a href="https://uni.edu.ni" target="__blank" onClick={closeMenu}>
+                                    <a onClick={closeMenu} href="https://uni.edu.ni" target="__blank" onClick={closeMenu}>
                                         <i className="material-icons">games</i>
                                         Web de la UNI
                                     </a>
