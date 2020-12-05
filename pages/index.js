@@ -32,7 +32,7 @@ export default function Home() {
                         </button>
                         <button className="btn btn-secondary">
                             <Link href="/search">
-                                <a className="reset-value-anchor">Ver grupos</a>
+                                <a className="reset-value-anchor">buscar grupos</a>
                             </Link>
                         </button>
                     </div>
