@@ -6,16 +6,30 @@ export default  css`
         margin: 35px auto;
     }
 
-    .container h3 {
+    .presentacion {
+        height: 100vh;        
+        background-color: #0b0c21;
+        padding: 15px;
+    }
+    
+    .presentacion h1 {
+        margin-bottom: 15px;
         font-size: 28px;
         text-align: center;
         font-weight: 700;
+        color: #01f9f8;
     }
 
-    .container p {
-        margin-top: 15px;
+    .presentacion p {
         font-size: 14px;
         text-align: center;
+        color: #fefefe;
+    }
+
+    .go-group {
+        margin: 22px 0;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .content {

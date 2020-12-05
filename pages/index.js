@@ -10,24 +10,31 @@ export default function Home() {
                 <title>Home | Redacción Técnica</title>
                 <script type="text/javascript" src="/houdini.js"></script>
             </Head>
-            <section className="container">
-                <h3>
+            <div className="presentacion">
+                <h1>
                     Investigación <br />
                     Redacción Técnica
-                </h3>
+                </h1>
                 <p>
                     El siguiente trabajo es parte de la Investigación para la
                     clase Redacción Técnica del segundo semestre de ingeniería
                     en computación grupo 1m2-co
                 </p>
+                <div className="go-group">
+                    <button className="btn btn-primary">
+                        <Link href="/search">
+                            <a className="reset-value-anchor">Ver grupos</a>
+                        </Link>
+                    </button>
+                    <button className="btn btn-secondary">
+                        <Link href="/search">
+                            <a className="reset-value-anchor">Ver grupos</a>
+                        </Link>
+                    </button>
+                </div>
+            </div>
+            <section className="container">
                 <section className="content">
-                    <div className="go-group">
-                        <button className="btn btn-primary">
-                            <Link href="/search">
-                                <a className="reset-value-anchor">Ver grupos</a>
-                            </Link>
-                        </button>
-                    </div>
                     <div className="video-info">
                         <div className="title-info">
                             <h2>
@@ -68,8 +75,12 @@ export default function Home() {
                             alt="XD"
                         />
                         <div className="title-info">
-                            <h2 style={{textAlign: 'center'}}>MARÍA DE LOURDES REYNOZA GÓMEZ</h2>
-                            <h3 style={{fontSize: '18px'}}>Departamento de Idiomas</h3>
+                            <h2 style={{ textAlign: "center" }}>
+                                MARÍA DE LOURDES REYNOZA GÓMEZ
+                            </h2>
+                            <h3 style={{ fontSize: "18px" }}>
+                                Departamento de Idiomas
+                            </h3>
                             <p>
                                 Investigación documental de carreras en
                                 ingeniería en computación y agrícola de la
