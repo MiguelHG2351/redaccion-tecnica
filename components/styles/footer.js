@@ -127,7 +127,6 @@ export default css`
             padding: 0;
             padding-left: 30%;
             list-style: none;
-            border-left: 1px #27ff07 solid;
         }
 
         .picture-img img {
