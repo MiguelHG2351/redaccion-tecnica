@@ -24,16 +24,18 @@ export default function Home() {
                             en computación grupo 1m2-co
                         </p>
                     </div>
-                    <button className="btn btn-primary">
-                        <Link href="/search">
-                            <a className="reset-value-anchor">Ver grupos</a>
-                        </Link>
-                    </button>
-                    <button className="btn btn-secondary">
-                        <Link href="/search">
-                            <a className="reset-value-anchor">Ver grupos</a>
-                        </Link>
-                    </button>
+                    <div className="button-group">
+                        <button className="btn btn-primary">
+                            <Link href="/search">
+                                <a className="reset-value-anchor">Ver grupos</a>
+                            </Link>
+                        </button>
+                        <button className="btn btn-secondary">
+                            <Link href="/search">
+                                <a className="reset-value-anchor">Ver grupos</a>
+                            </Link>
+                        </button>
+                    </div>
                 </div>
                 <div className="image">
                     <img src="/images/webp/FEC.webp" className="responsive-img" alt="XD" />

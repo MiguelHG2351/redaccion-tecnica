@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Layout from "../components/Layout";
 import Header from "../components/header";
@@ -11,6 +12,9 @@ function MyApp(props) {
     const { Component, pageProps } = props;
     return (
         <>
+            <Head>
+                <meta name="viewport" content="width=device-width, user-scalable=no"/>
+            </Head>
             <Layout>
                 <Header />
                 <Component {...pageProps} />

@@ -11,9 +11,10 @@ export default css.global`
         --shadow:  0px 1px 5px 0px rgba(0,0,0,0.15);
     }
 
-    /* body {
+    body {
         overflow-x: hidden;
-    } */
+        background-color: #eee;
+    }
 
     .btn {
         border: none;
@@ -47,6 +48,10 @@ export default css.global`
         transition: transform 0.17s ease-in-out;
         -webkit-mask-image: paint(bezel);
         background-image: paint(bezel);
+    }
+
+    .btn-primary, .btn-secondary {
+        width: max-content;
     }
 
     .btn-primary:hover, .btn-secondary:hover {

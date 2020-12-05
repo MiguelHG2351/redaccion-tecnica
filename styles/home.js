@@ -34,6 +34,11 @@ export default  css`
         justify-content: space-evenly;
     }
 
+    .button-group {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     .image {
         position: relative;
         z-index: 2;
@@ -111,12 +116,30 @@ export default  css`
     }
 
     @media screen and (min-width: 768px) {
+
+        .presentacion {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .go-group {
+            justify-content: center;
+        }
+
+        .image {
+            height: 100%;
+            justify-content: flex-end;
+        }
+        
+        .background {
+            left: unset;
+            right: -37%;
+        }
+
         .video-info, .facultades {
             display: grid;
-            grid-template-columns: 50% 50%;
-
+            grid-template-columns: 40% 60%;
             align-items: center;
-
         }
     }
 
@@ -125,12 +148,35 @@ export default  css`
             width: 1250px;
         }
 
+        .go-group {
+            justify-content: center;
+            gap: 50px 0;
+        }
+
+        .intro h1 {
+            font-size: 36px;
+        }
+
+        .intro p {
+            font-size: 22px;
+        }
+
         .video-info, .facultades {
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-column-gap: 50px;
+            grid-template-columns: 40% 60%;
             align-items: center;
 
         }
+
+        .title-info h2 {
+            font-size: 36px;
+        } 
+
+        .title-info p {
+            font-size: 20px;
+        } 
+
     }
 
 `
