@@ -18,7 +18,6 @@ export default function Card({ name, title, link, images, videos }) {
                             <div className="time">
                                 <small>Videos: {videos}</small>
                                 <br/>
-                                <small>Archivos: {videos}</small>
                                 
                             </div>
                         </div>

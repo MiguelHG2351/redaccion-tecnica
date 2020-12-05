@@ -26,6 +26,7 @@ export default function Header () {
                 <div className="container-header">
                     <div className={menu}>
                         <div className="container-sidenav">
+                            <h1 className="desktop-h1">Redacción Técnica</h1>
                             <div className="profile">
                                 <div className="background">
                                     <img
@@ -80,6 +81,7 @@ export default function Header () {
                             </ul>
                         </div>
                     </div>
+                    
                     <div className="header-visible">
                         <button className="btn btn-menu" onClick={toggleMenu}>
                             <i className="material-icons">sort</i>

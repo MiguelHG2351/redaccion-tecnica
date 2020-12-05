@@ -61,19 +61,10 @@ function GrupoVideo({router}) {
                                 <h1>Grupo {index+1}</h1>
                             </div>
                             <ul className="list-group">
-                                <div className="line"></div>
                                 <li className="group">
                                     <i className="material-icons">check_circle</i>
                                     <Link href={`/${carrera}/${data.name}`}>
-                                        <a>Grupo {index+1}</a>
-                                    </Link>
-                                </li>
-    
-                                <li className="group">
-                                    <i className="material-icons">check_circle</i>
-    
-                                    <Link href="/group/2">
-                                        <a>No hay Recursos</a>
+                                        <a>{data.name}</a>
                                     </Link>
                                 </li>
                             </ul>

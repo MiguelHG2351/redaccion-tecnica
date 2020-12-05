@@ -103,23 +103,12 @@ export default css`
         color: #fff;
     }
 
-    @media screen and (min-width: 1200px) {
-        
-        .groups {
-            position: fixed;
-            width: 20%;
-            height: auto;
-            top: 104px;
-            left: 0;
-            bottom: 0;
-        }
-    }
-
+    
     @media screen and (min-width: 992px) {
         .container {
             display: grid;
             grid-template-areas: "col1 col2";
-            grid-template-columns: 20% 80%;
+            grid-template-columns: 35% 65%;
             grid-template-rows: auto;
             margin-bottom: 0;
         }
@@ -129,9 +118,40 @@ export default css`
         }
 
         .groups {
+            position: fixed;
             grid-area: col1;
             height: auto;
         }
 
     }
+
+    @media (orientation: portrait) {
+        .container {
+            display: block !important;
+        }
+        .groups {
+            position: static;
+        }
+
+        .background {
+            z-index: -1;
+        }
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        
+        .container {
+            grid-template-columns: 20% 80%;
+        }
+        .groups {
+            position: fixed;
+            width: 20%;
+            height: auto;
+            top: 101px;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
 `;

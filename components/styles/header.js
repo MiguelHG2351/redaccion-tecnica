@@ -52,6 +52,10 @@ const style = css`
         z-index: -1;
     }
 
+    .desktop-h1 {
+        display: none;
+    }
+
     .user-info .avatar {
         margin-bottom: 22px;
     }
@@ -128,6 +132,13 @@ const style = css`
 
     @media screen and (min-width: 996px) {
 
+
+        .desktop-h1 {
+            display: flex;
+            color: #fff;
+            align-items: center;
+        }
+
         /* SideNav */
 
         .sidenav {
@@ -137,6 +148,7 @@ const style = css`
             overflow: hidden;
             box-shadow: var(--shadow);
             background-color: #24317a;
+            padding: 22px;
         }
 
         .container-sidenav {
@@ -155,6 +167,10 @@ const style = css`
         }
 
         .background {
+            display: none;
+        }
+
+        .user-info {
             display: none;
         }
 
