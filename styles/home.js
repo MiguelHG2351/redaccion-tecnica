@@ -8,7 +8,7 @@ export default  css`
 
     .presentacion {
         height: 100vh;        
-        background-color: #0b0c21;
+        /* background-color: #0b0c21; */
         padding: 15px;
     }
     
@@ -29,7 +29,36 @@ export default  css`
     .go-group {
         margin: 22px 0;
         display: flex;
+        flex-direction: column;
+        gap: 12px;
         justify-content: space-evenly;
+    }
+
+    .image {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .image img:not(.background) {
+        width: 50%;
+    }
+
+    .background {
+        position: absolute;
+        display: initial;
+        left: -100px;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        /* transform: rotate(90deg); */
+        z-index: -1;
     }
 
     .content {

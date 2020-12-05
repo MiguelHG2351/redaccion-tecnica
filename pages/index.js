@@ -8,19 +8,22 @@ export default function Home() {
             <Head>
                 <meta name="og:title" content="Home | Redacción Técnica" />
                 <title>Home | Redacción Técnica</title>
+                {/* <script type="text/javascript" src="/background.js"></script> */}
                 <script type="text/javascript" src="/houdini.js"></script>
             </Head>
-            <div className="presentacion">
-                <h1>
-                    Investigación <br />
-                    Redacción Técnica
-                </h1>
-                <p>
-                    El siguiente trabajo es parte de la Investigación para la
-                    clase Redacción Técnica del segundo semestre de ingeniería
-                    en computación grupo 1m2-co
-                </p>
+            <div className="presentacion random">
                 <div className="go-group">
+                    <div className="intro">
+                        <h1>
+                            Investigación <br />
+                            Redacción Técnica
+                        </h1>
+                        <p>
+                            El siguiente trabajo es parte de la Investigación para la
+                            clase Redacción Técnica del segundo semestre de ingeniería
+                            en computación grupo 1m2-co
+                        </p>
+                    </div>
                     <button className="btn btn-primary">
                         <Link href="/search">
                             <a className="reset-value-anchor">Ver grupos</a>
@@ -31,6 +34,13 @@ export default function Home() {
                             <a className="reset-value-anchor">Ver grupos</a>
                         </Link>
                     </button>
+                </div>
+                <div className="image">
+                    <img src="/images/webp/FEC.webp" className="responsive-img" alt="XD" />
+                    {/* <img/> */}
+                    <div className="xd">
+                        <img src="/images/rectangle.svg" className="background" alt="XD"/>
+                    </div>
                 </div>
             </div>
             <section className="container">

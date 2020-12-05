@@ -11,6 +11,10 @@ export default css.global`
         --shadow:  0px 1px 5px 0px rgba(0,0,0,0.15);
     }
 
+    /* body {
+        overflow-x: hidden;
+    } */
+
     .btn {
         border: none;
         outline: none;
@@ -20,6 +24,14 @@ export default css.global`
     .responsive-img {
         max-width: 100%;
         height: auto;
+    }
+
+    .random {
+        --art-alpha: 0.5;
+        --art-color: rgba(255, 255, 255);
+        --art-steps: 50;
+        /* background-image: paint(art), linear-gradient(to right, blue, black); */
+        background: #0b0c21;
     }
 
     .btn-primary {
