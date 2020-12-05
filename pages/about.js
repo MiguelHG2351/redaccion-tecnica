@@ -21,7 +21,7 @@ export default function About() {
                         />
                     </div>
                     <div className="info">
-                        <h1>Acerca de este sitio</h1>
+                        <h2>Acerca de este sitio</h2>
                         <div className="text">
                             <p>
                                 Este sitio ha sido creado con propósitos académicos
@@ -80,16 +80,16 @@ export default function About() {
 
                 </section>
 
-                <section className="description left">
+                <section className="description right">
+                    <div className="info">
+                        <h2>Representación de como funciona el sitio web</h2>
+                    </div>
                     <div className="image-description">
                         <img
                             src="/images/process-back.png"
                             className="responsive-img"
                             alt="Proceso del sitio web"
                         />
-                    </div>
-                    <div className="info">
-                        <h2>Representación de como funciona el sitio web</h2>
                     </div>
                 </section>
             </section>

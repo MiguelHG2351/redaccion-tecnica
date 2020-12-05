@@ -23,6 +23,11 @@ export default css`
 
         }
 
+        .info h2 {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
         .left {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
