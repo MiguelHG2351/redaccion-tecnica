@@ -44,6 +44,7 @@ export default function About() {
                     CSS ~ Asesoría y soporte tecnico
                 </p>
                 <br/>
+                <img src="/images/process-back.png" className="responsive-img" alt="Proceso del sitio web"/>
             </section>
             <h1>._.XD</h1>
             <style jsx>{styles}</style>
